@@ -1,0 +1,40 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/activity_vertical_margin"
+                android:paddingBottom="@dimen/activity_vertical_margin"
+                tools:context="com.example.funfacts.InstructionsActivity"
+                android:background="#51b46d"
+                android:id="@+id/relativeLayoutInstructions">
+
+    <TextView android:text="Welcome to my first app creation ever. This app allows you to have fun facts at your finger tips when it is most important - when you are on a date, having dinner with your family, or on the toilet." android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:textSize="20sp"
+              android:textColor="#80ffffff"
+              android:id="@+id/WelcomeTextView"/>
+
+    <TextView android:text="INSTRUCTIONS: READ FUNFACT > CLICK SHOW ME ANOTHER FUN FACT > REPEAT"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:textSize="25sp"
+              android:textColor="#80ffffff"
+              android:id="@+id/InstructionsTextView"
+              android:layout_below="@+id/WelcomeTextView"
+              android:layout_alignParentLeft="true"
+              android:layout_alignParentStart="true"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Back to FunFacts"
+        android:id="@+id/BackToFunFacts"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@android:color/white"
+        android:textColor="#51b46d"
+        android:onClick=""/>
+
+</RelativeLayout>
