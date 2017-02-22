@@ -1,0 +1,68 @@
+<resources>
+    <string name="app_name">PUL DATABASE</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_instructions">InstructionsActivity</string>
+    <string name="title_activity_readme">README</string>
+    <string name="read_me_string_res">Read-Me: This is the read-me for the app. Made with Android Studio for a project, three GUI needed for the project. Very simple practice. Have fun.</string>
+    <string name="pickThemUpWithIntroTextView">Pick Them Up With...</string>
+    <string name="addANewPickUpLineText">Add A New Pick Up Line</string>
+    <string name="title_activity_add_pick_up_line">AddPickUpLineActivity</string>
+    <string name="backToMain">Back To Main</string>
+    <string name="addButton">Add This Pick Up Line</string>
+    <string name="addButton1">Add</string>
+    <string name="deleteButton">Delete</string>
+    <string name="hires">My Saved Pick Up Lines</string>
+    <string name="instrP">Instructions:\n\nNote: For best results,\nkeep this app on your homepage\nso it is easily accessed.\n\nUse this add to store and retrieve\npickup lines you like.\n\nTo Add a pickup line,\npress the Add A Pick Up Line button\non the bottom of the screen.\nThis will take to a new page.\nIn the textfield at the top of the page,\nenter your pick up line.\nNote: Make sure you hit\nthe Add button to save to the app.\n\nTo Delete: Type in the exact\npickup line you want to delete,\nand hit the Delete button.</string>
+    <string name="READMEP">Hello World! Welcome to my first Android application using SQLite Databases.\nThis app exists so you can keep your best pickuplines on hand and access them quickly and easily.\n****\nandroid {\n
+    compileSdkVersion 22\n
+    buildToolsVersion "22.0.1"
+    defaultConfig {\n
+        minSdkVersion 15\n
+        targetSdkVersion 22\n
+        versionCode 1\n
+        versionName "1.0"}\n
+        ****\n
+    This app is built with Lollipop 22, and was made with Android Studio 2.2.3, build date 20.02.2017 by E. Gutmanis.\nEnjoy!</string>
+    <string name="enter_genre">Enter genre</string>
+    <string name="genre">Genre</string>
+    <string name="pickupline">Pickupline</string>
+    <string name="enter_pickupline">Enter pickupline</string>
+    <string name="add_data">Add Data</string>
+    <string name="view_all">View All</string>
+    <string name="id">Id</string>
+    <string name="update">Update</string>
+    <string name="instructions">Instructions</string>
+    <string name="readme">README</string>
+    <string name="personal_db_title">Personal Pickupline Database</string>
+    <string name="view_saved_pickuplines">View Saved Pickuplines</string>
+    <string name="title">MY PICKUPLINE DATABASE</string>
+    <string name="back_to_home">Back to Home</string>
+    <string name="home_button_instructions">Home: Button Instructions</string>
+    <string name="textview">TextView</string>
+    <string name="button_view_saved_pickuplines">Button: View Saved Pickuplines</string>
+    <string name="home_page">Home Page</string>
+    <string name="button_readme">Button: Readme</string>
+    <string name="button_add_new_pick_up_line">Button: Add New Pick Up Line</string>
+    <string name="to_add_a_pickupline">To Add A Pickupline:</string>
+    <string name="to_view_database">To View Database</string>
+    <string name="to_update_existing_data">To Update Existing Data</string>
+    <string name="click_on_this_button_to_view_all_your_saved_pickuplines">Click on this button to view all your saved pickuplines.</string>
+    <string name="click_on_this_button_to_add_a_new_pickupline_to_your_database_it_will_take_you_to_a_new_page_read_the_instructions_in_the_next_section_for_full_instructions">Click on this button to add a new pickupline to your database. It will take you to a new page. Read the instructions in the next section for full instructions.</string>
+    <string name="_1_enter_your_pickupline">1. Enter your pickupline in pickupline field.\n2. Enter your genre in genre field.\n3. IGNORE id field. This is ONLY for UPDATING\n4. Click Add Data.\n5. To view the added pickupline, click on View All</string>
+    <string name="_1_click_on_view_all_this_will_show_all_your_added_data">1. Click on View All. This will show all your added data.</string>
+    <string name="to_view_pickuplines_in_database">To View Pickuplines in Database</string>
+    <string name="_1_enter_existing_pickupline_and_its_genre_into_respective_fields_making_the_changes_if">Note: Before updating an existing pickupline entry, take note of its ID number. To find the ID number, view database and locate the ID number for your chosen pickupline entry.\n
+        1. Enter the pickupline you want to update and make the changes your changes. Any changes made will overwrite your existing data, and old data cannot be retrieved.\n2. Enter the pickupline\'s id number.\n3. Click Update.\n4.To view changes, click on View All.
+        \nExample: User saved \"Is your name Daniel? Because damn\" and its genre \"Lame\", but wants to change \"damn\" to capital letters and add an exclamation mark. User also wants to change genre to \"Funny\". User simply enters the desired pickupline with changes made, \"Is your name Daniel? Because DAMN\"\! into the pickupline field, and enters \"Funny\" into the genre field. User enters the id number into id field, and clicks Update.</string>
+    <string name="add_new_pickupline_page">Add New Pickupline Page</string>
+    <string name="to_update_existing_pickuplines">To Update Existing Pickuplines</string>
+    <string name="delete">Delete</string>
+    <string name="to_delete_existing_pickupline">To Delete Existing Pickupline</string>
+    <string name="enter_only_the_id_of_the_pickupline_you_want_to_delete_and_click_delete">Enter only the ID of the pickupline you want to delete, and Click Delete.</string>
+    <string name="updatingOnlyHint">ID: for Updating and Deleting ONLY</string>
+    <string name="pul_savedButton">View Saved Pickuplines BUTTON</string>
+    <string name="Add_button" />
+    <string name="add_buttons">Add A New Pickupline BUTTON</string>
+</resources>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.funfacts" >
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".FunFactsActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".InstructionsActivity"
+            android:label="@string/title_activity_instructions" >
+        </activity>
+        <activity
+            android:name=".README"
+            android:label="@string/title_activity_readme" >
+        </activity>
+        <activity
+            android:name=".AddPickUpLineActivity"
+            android:label="@string/title_activity_add_pick_up_line" >
+        </activity>
+    </application>
+
+</manifest>
