@@ -26,7 +26,9 @@ public class FunFactsActivity extends AppCompatActivity implements OnClickListen
     private Button mButtonInstructionPage;
     private Button mButtonReadMePage;
     Button btnViewAll;
+    Button btnSum;
     DatabaseHelper myDb;
+    Person user;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,6 +37,7 @@ public class FunFactsActivity extends AppCompatActivity implements OnClickListen
         setContentView(R.layout.activity_fun_facts);
 
         myDb = new DatabaseHelper(this);
+        user = new Person();
 
         // assign the views from the layout file to the corresponding variables
         findViewById(R.id.button_changeTheme).setOnClickListener(this);
@@ -46,6 +49,8 @@ public class FunFactsActivity extends AppCompatActivity implements OnClickListen
         mButtonInstructionPage = (Button) findViewById(R.id.button_instructions);
         mButtonReadMePage = (Button) findViewById(R.id.button_readme);
         btnViewAll = (Button) findViewById(R.id.button_viewFromMainActivity);
+        btnSum = (Button) findViewById(R.id.btn_sum);
+
         viewAll();
 
         View.OnClickListener listener = new View.OnClickListener() {
@@ -70,9 +75,17 @@ public class FunFactsActivity extends AppCompatActivity implements OnClickListen
                 startActivity(new Intent(FunFactsActivity.this, README.class));
             }
         };
+        View.OnClickListener goToSum = new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(FunFactsActivity.this, Sum.class));
+            }
+
+        };
         mGoToAddPickUpLineButton.setOnClickListener(listener);
         mButtonInstructionPage.setOnClickListener(newPageInstruct);
         mButtonReadMePage.setOnClickListener(newPageReadme);
+        btnSum.setOnClickListener(goToSum);
 
         Toast.makeText(FunFactsActivity.this, "Yay! Our Activity was created!", Toast.LENGTH_SHORT).show();
         Log.d(TAG, "We're logging from the onCreate() method!");

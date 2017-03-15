@@ -106,4 +106,17 @@
         android:layout_alignBottom="@+id/button_changeTheme"
         android:layout_centerHorizontal="true" />
 
+    <Button
+        android:text="Username"
+        android:padding="5dp"
+        android:textColor="@color/orange600"
+        android:background="@color/indigo800"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_sum"
+        android:layout_above="@+id/button_changeTheme2"
+        android:layout_alignLeft="@+id/button_changeTheme2"
+        android:layout_alignStart="@+id/button_changeTheme2"
+        android:layout_marginBottom="11dp" />
+
 </RelativeLayout>
