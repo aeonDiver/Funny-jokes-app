@@ -61,10 +61,14 @@ public class AddPickUpLineActivity extends AppCompatActivity {
                     @Override
                     public void onClick(View view) {
                         Integer deletedRows = myDb.deleteData(editId.getText().toString());
-                        if(deletedRows > 0)
-                            Toast.makeText(AddPickUpLineActivity.this, "Data deleted",Toast.LENGTH_LONG).show();
-                        else
-                            Toast.makeText(AddPickUpLineActivity.this, "Data not deleted",Toast.LENGTH_LONG).show();
+                        try {
+                            if (deletedRows > 0)
+                                Toast.makeText(AddPickUpLineActivity.this, "Data deleted", Toast.LENGTH_LONG).show();
+                            else
+                                Toast.makeText(AddPickUpLineActivity.this, "Data not deleted", Toast.LENGTH_LONG).show();
+                        } catch (StringIndexOutOfBoundsException e) {
+                            Toast.makeText(AddPickUpLineActivity.this, "Error: Nothing happened", Toast.LENGTH_LONG).show();
+                        }
                     }
                 }
         );
